@@ -32,7 +32,7 @@ class App extends React.Component {
       <main>
         <BrowserRouter>
           <section>
-            <Route exact path='/note' component={() => <NoteContainer app={this.getApp()} />} />
+            <Route exact path='/' component={() => <NoteContainer app={this.getApp()} />} />
           </section>
         </BrowserRouter>
       </main>
