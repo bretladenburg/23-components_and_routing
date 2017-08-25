@@ -1,5 +1,5 @@
 import React from 'react';
-import NoteForm from '../note-form';
+import NoteCreateForm from '../note-create-form';
 
 class NoteList extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class NoteList extends React.Component {
                 <p>content: {item.content}</p>
               </div>
 
-              <NoteForm
+              <NoteCreateForm
                 note={item}
                 submitTitle='update note'
                 handleSubmit={(note) => {

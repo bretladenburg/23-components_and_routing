@@ -4,11 +4,11 @@ import uuid from 'uuid';
 import Modal from '../modal';
 import Navbar from '../navbar';
 import NoteList from '../note-list';
-import NoteForm from '../note-form';
+import NoteCreateForm from '../note-create-form';
 
 let renderIf = (test, component) => test ? component : undefined;
 
-class NoteContainer extends React.Component {
+class NoteItem extends React.Component {
   constructor(props) {
     super(props);
 
@@ -56,7 +56,7 @@ class NoteContainer extends React.Component {
       <section className='note'>
         <Navbar />
 
-        <NoteForm
+        <NoteCreateForm
           handleSubmit={this.noteCreate}
           submitTitle='add note'
         />
@@ -71,4 +71,4 @@ class NoteContainer extends React.Component {
   }
 }
 
-export default NoteContainer;
+export default NoteItem;

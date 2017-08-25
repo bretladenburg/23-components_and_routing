@@ -5,7 +5,7 @@ import ReactDom from 'react-dom'
 import uuid from 'uuid/v1'
 import {BrowserRouter, Route} from 'react-router-dom';
 
-import NoteContainer from './component/note-container';
+import NoteItem from './component/note-item';
 
 class App extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class App extends React.Component {
       <main>
         <BrowserRouter>
           <section>
-            <Route exact path='/' component={() => <NoteContainer app={this.getApp()} />} />
+            <Route exact path='/' component={() => <NoteItem app={this.getApp()} />} />
           </section>
         </BrowserRouter>
       </main>

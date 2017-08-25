@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
 
-class NoteForm extends React.Component {
+class NoteCreateForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -42,7 +42,7 @@ class NoteForm extends React.Component {
 
   render() {
     return (
-      <form className='note-form' onSubmit={this.handleSubmit}>
+      <form className='note-create-form' onSubmit={this.handleSubmit}>
         <input
           name='title'
           type='text'
@@ -63,4 +63,4 @@ class NoteForm extends React.Component {
   }
 }
 
-export default NoteForm;
+export default NoteCreateForm;
